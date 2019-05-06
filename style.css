@@ -73,6 +73,10 @@ form div input[type=button]:hover {
 
 @media only screen and (max-width: 360px){
 
+    form div input[type=submit], form div input[type=button] {
+        font-size: 20px;
+    }
+
     #display {
         font-size: 20px;
         width: 300px;
