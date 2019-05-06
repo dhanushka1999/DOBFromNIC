@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOB from NIC</title>
+</head>
+<body>
+
+    <form id="form">
+        <input type="number" id="nic" placeholder="Enter Your NIC" required/>
+        <div>
+            <input type="submit" id="submit" value="Submit"/>
+            <input type="button" id="reset" value="Reset" />
+        </div>
+    </form>
+
+    <div id="display">
+        <p>Your NIC: <span id="displayNic"></span></p>
+        <p>Your Birthday: <span id="displayDob"></span></p>
+        <p>Your Sex:<span id="displaySex"></span></p>
+    </div>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
