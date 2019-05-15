@@ -5,24 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css" />
     <title>DOB from NIC</title>
 </head>
 <body>
 
-    <form id="form">
-        <input type="number" id="nic" placeholder="Enter Your NIC" required/>
-        <div>
-            <input type="submit" id="submit" value="Submit"/>
-            <input type="button" id="reset" value="Reset" />
-        </div>
-    </form>
+    <div class="container bg-light border border-primary mt-3">
 
-    <div id="display">
-        <p>Your NIC: <span id="displayNic"></span></p>
-        <p>Your Birthday: <span id="displayDob"></span></p>
-        <p>Your Sex :<span id="displaySex"></span></p>
+    <div class="container mt-5">
+        <form id="form">
+            <input class="form-control form-control-lg border border-primary" type="number" id="nic" placeholder="Enter Your NIC" required/>
+            <div class="form-row">
+                <span class="col"></span>
+                <div class="col">
+                    <input class="btn btn-lg btn-outline-primary btn-block my-3" type="submit" id="submit" value="Submit"/>
+                </div>
+                <span class="col"></span>
+                <div class="col">
+                    <input class="btn btn-lg btn-outline-primary btn-block my-3" type="button" id="reset" value="Reset" />
+                </div>
+                <span class="col"></span>
+            </div>
+        </form>
     </div>
+    
+    <div class="container mb-5" id="display">
+        <div class="card card-body text-center mx-5 border border-primary">
+            <div>
+                <p class="card-text">Your NIC: <span class="text-primary" id="displayNic"></span></p>
+                <p class="card-text">Your Birthday: <span class="text-primary" id="displayDob"></span></p>
+                <p class="card-text">Your Sex : <span class="text-primary" id="displaySex"></span></p>
+            </div>
+        </div>
+    </div>
+
+</div>
 
     <script src="javascript.js"></script>
     
